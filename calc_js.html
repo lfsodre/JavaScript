@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        //-----------------------------------------------------------
+        var A = prompt("Insira o primeiro número: ");
+        var B = prompt("Insira o segundo número: ");
+        var O = prompt("Qual operação deseja realizar? (digite: + ou - ou * ou /)");
+        //-----------------------------------------------------------
+        var resultado = 0;
+        //---------------------FUNÇÕES-------------------------------
+        if (O == '+')
+            resultado = soma(A,B);
+        if (O == '-')
+            resultado = subtracao(A,B);
+        if (O == '*')
+            resultado = multiplique(A,B);
+        if (O == '/')
+            resultado = divisao(A,B);
+        //-----------------------EXIBIR------------------------------
+        alert('O resultado da operação é igual a : ' + resultado);
+        //------------------------FUNÇÕES----------------------------
+        function soma(A,B)          { return parseInt(A) + parseInt(B);}
+        //-----------------------------------------------------------
+        function subtracao(A,B)     { return parseInt(A) - parseInt(B);}
+        //-----------------------------------------------------------
+        function multiplique(A,B)   { return parseInt(A) * parseInt(B);}
+        //-----------------------------------------------------------
+        function divisao(A,B)       { return parseInt(A) / parseInt(B);}
+        //-----------------------------------------------------------
+    </script>
+</head>
+<body>
+    <div id="exibe_resultado">Resultado</div>
+</body>
+</html>
