@@ -16,20 +16,26 @@
             background-color: #eee0c0;
             color: #3d4157;
             text-align: center;
+            font: normal 50px Arial
         }
         h1 {color: #f15135;}
-        p  {font-size:  20px;}
-
     </style>
 </head>
 <body>
     <h1>Hello World</h1>
-    <p>Ipsulun dor</p>
     <script>
-        var A = Number(window.prompt ('Digite um número'))
-        var B = Number(window.prompt ('Digite outro número'))
-        var S = A + B
-        window.alert(`A soma entre ${A} e ${B} é igual a ${S}`)
+        var n1 = window.prompt('Qual o seu salario?')
+        n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+        document.write(`Seu salario é ${n1}`)
+
+        /*
+        n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+        'R$ 1.545,50'
+        > n1.toLocaleString('pt-BR', {style:'currency', currency: 'USD'})
+        'US$ 1.545,50'
+        > n1.toLocaleString('pt-BR', {style:'currency', currency: 'EUR'})
+        '€ 1.545,50'
+        */
     </script>
 </body>
 </html>
