@@ -20,15 +20,15 @@ if (O == '**')
 //-----------------------EXIBIR------------------------------
 alert('O resultado da operação é igual a : ' + resultado);
 //------------------------FUNÇÕES----------------------------
-function soma(A,B)          { return Number(A) + Number(B);}
+function soma(A,B)          { return Number(A) + Number(B); }
 //-----------------------------------------------------------
-function subtracao(A,B)     { return Number(A) - Number(B);}
+function subtracao(A,B)     { return Number(A) - Number(B); }
 //-----------------------------------------------------------
-function multiplique(A,B)   { return Number(A) * Number(B);}
+function multiplique(A,B)   { return Number(A) * Number(B); }
 //-----------------------------------------------------------
-function divisao(A,B)       { return Number(A) / Number(B);}
+function divisao(A,B)       { return Number(A) / Number(B); }
 //-----------------------------------------------------------
-function porcentagem(A,B)       { return Number(A) % Number(B);}
+function porcentagem(A,B)   { return Number(A) % Number(B); }
 //-----------------------------------------------------------
-function exponencial(A,B)       { return Number(A) ** Number(B);}
+function exponencial(A,B)   { return Number(A) ** Number(B);}
 //-----------------------------------------------------------
