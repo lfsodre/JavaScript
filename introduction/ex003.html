@@ -29,6 +29,11 @@
         document.write(`Seu salario é ${n1}`)
 
         /*
+        #----FICA COM DUAS CASAS DECIMAIS ANTES DA VIRGULA----#
+        n1.toFixed(2)
+        '1545.50'
+
+        #------------FICA COM A FORMATAÇÃO DA MOEDA-----------#
         n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
         'R$ 1.545,50'
         > n1.toLocaleString('pt-BR', {style:'currency', currency: 'USD'})
